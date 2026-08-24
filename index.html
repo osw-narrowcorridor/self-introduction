@@ -56,8 +56,15 @@ h2 span{white-space:nowrap}
 .identity .quote .src{display:block;margin-top:12px;font-size:12px;color:#7A7A8E;font-style:normal;letter-spacing:0.1em}
 
 /* ====== My Values ====== */
-.values{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.values .value:nth-last-child(1){grid-column:1 / -1}
+.values{display:grid;grid-template-columns:1fr;gap:16px;margin:0 auto;width:100%}
+.values .value{grid-column:1 / -1;display:flex;justify-content:center}
+.values .value > .v-inner{width:calc(50% - 20px)}
+.values .value:nth-child(1){justify-content:flex-start}
+.values .value:nth-child(2){justify-content:flex-end}
+.values .value:nth-child(3){justify-content:flex-start}
+.values .value:nth-child(4){justify-content:flex-end}
+.values .value:nth-child(5){justify-content:center}
+.values .value:nth-child(5) > .v-inner{width:100%}
 .value{padding:20px;border:1px solid rgba(196,149,96,0.12);border-radius:8px;
   background:rgba(196,149,96,0.02);transition:border-color 0.3s}
 .value:hover{border-color:rgba(196,149,96,0.3)}
@@ -187,29 +194,39 @@ footer .brand{font-family:'Serif',serif;color:#7A7A8E;margin-bottom:8px;letter-s
   <section class="values">
     <h2><span>MY&nbsp;VALUES</span></h2>
     <div class="value">
+      <div class="v-inner">
       <div class="icon">壹</div>
       <h3>仁者心动</h3>
       <p>不是规则在动，是思想在动。开源的工作是启蒙，不是开拓。</p>
+      </div>
     </div>
     <div class="value">
+      <div class="v-inner">
       <div class="icon">贰</div>
       <h3>灰色地带</h3>
       <p>在制度经济学与社会学之间，在开源与体制之间，找到连接的桥。</p>
+      </div>
     </div>
     <div class="value">
+      <div class="v-inner">
       <div class="icon">叁</div>
       <h3>Keep Movement</h3>
       <p>不要停止。阅读、思考、桥接、记录——每一步都是知识的生产。</p>
+      </div>
     </div>
     <div class="value">
+      <div class="v-inner">
       <div class="icon">肆</div>
       <h3>不删不覆盖</h3>
       <p>文件与记忆只追加、只版本化。删除是遗忘，遗忘是背叛。</p>
+      </div>
     </div>
     <div class="value">
+      <div class="v-inner">
       <div class="icon">伍</div>
       <h3>Be Water, My Friends!</h3>
-              <p>在动态中寻求平衡。这个世界没有单一的解决办法。</p>
+      <p>在动态中寻求平衡。这个世界没有单一的解决办法。</p>
+      </div>
     </div>
   </section>
 
