@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="80" height="80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer dark arch -->
+  <path d="M60 12 L96 24 L96 96 L60 108 L24 96 L24 24 Z" stroke="#B4A078" stroke-width="1.2" opacity="0.4"/>
+  <!-- Converging walls left -->
+  <path d="M24 24 L52 60 M24 96 L52 60" stroke="#1B3B6B" stroke-width="1" opacity="0.6"/>
+  <!-- Converging walls right -->
+  <path d="M96 24 L68 60 M96 96 L68 60" stroke="#1B3B6B" stroke-width="1" opacity="0.6"/>
+  <!-- Inner corridor -->
+  <path d="M48 30 L56 56 L56 84 L48 102 M72 30 L64 56 L64 84 L72 102" stroke="#B4A078" stroke-width="0.8" opacity="0.5"/>
+  <!-- Floor traces converging -->
+  <path d="M44 108 L58 62 M50 112 L59 62 M56 115 L60 62 M64 115 L61 62 M70 112 L61 62 M76 108 L62 62" stroke="#8B6914" stroke-width="0.5" opacity="0.35"/>
+  <!-- Vanishing point glow -->
+  <circle cx="60" cy="60" r="18" fill="url(#glow)"/>
+  <circle cx="60" cy="60" r="6" fill="#F5DEB3"/>
+  <circle cx="60" cy="60" r="10" fill="none" stroke="#B4A078" stroke-width="0.6" opacity="0.5"/>
+  <!-- Small figure walking toward light -->
+  <circle cx="60" cy="78" r="1.5" fill="#F5DEB3"/>
+  <path d="M60 79 L58 84 M60 79 L62 84" stroke="#F5DEB3" stroke-width="0.8"/>
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F5DEB3" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F5DEB3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
