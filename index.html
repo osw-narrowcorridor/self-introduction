@@ -29,9 +29,15 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;background-im
 main{max-width:680px;margin:0 auto;padding:120px 32px 80px;position:relative;z-index:1}
 
 /* ====== Hero ====== */
-.hero{text-align:center;margin-bottom:72px}
-.hero-symbol{display:block;margin:0 auto 40px;width:120px;height:120px}
-.hero-symbol svg{display:block;width:120px;height:120px;filter:drop-shadow(0 0 24px rgba(245,222,179,0.4))}
+.hero{text-align:center;margin-bottom:72px;position:relative}
+.hero-bg{width:280px;height:420px;margin:0 auto 40px;border-radius:12px;overflow:hidden;
+  background:url('/narrow-corridor-hero.png') center/cover no-repeat;
+  border:1px solid rgba(180,160,120,0.3);
+  box-shadow:0 0 40px rgba(245,222,179,0.15), inset 0 0 60px rgba(10,10,15,0.5);
+  position:relative}
+.hero-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(10,10,15,0.3) 0%, rgba(10,10,15,0.0) 30%, rgba(10,10,15,0.5) 100%);}
+.hero-symbol{display:none}
 .mark{font-family:'Serif',serif;font-size:96px;font-weight:900;letter-spacing:0.35em;
   background:linear-gradient(180deg,#F5DEB3 0%,#B4A078 50%,#8B6914 100%);
   -webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1;padding-left:0.35em;
@@ -136,6 +142,7 @@ footer .brand{font-family:'Serif',serif;color:#7A7A8E;margin-bottom:8px;letter-s
 <main>
 
   <section class="hero">
+    <div class="hero-bg"></div>
     <div class="hero-symbol">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
         <defs>
